@@ -1,0 +1,27 @@
+elastic search (1 kontener)
+    szybko szuka, zjada duzo ramu
+
+kibana (1 kontener)
+    nakladka na elastic search, podgladanie danych
+
+postgresql (1 kontener)
+    baza danych
+
+redis (1 kontener)
+    baza danych, dziala tylko w ramie, szybka
+
+adminer (1 kontener)
+    do podgladania bazy danych
+
+backend (1 kontener)
+
+---------------------------------------------------
+uzywamy plikow yml/yaml do plikow docker-compose(setup aplikacji pod dockerem)
+
+----------------------
+Data pipeline
+
+E(extract) -> T(transform) -> L(load)
+
+Apache Airflow - popularne oprogramowanie
+    polega na DAG(graf wyjasniajacy pipeline)
